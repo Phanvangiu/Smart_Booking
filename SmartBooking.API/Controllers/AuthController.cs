@@ -69,8 +69,19 @@ public class AuthController : BaseApiController
   }
 
   [HttpGet("get")]
-  public async Task<IActionResult> Get()
+  public IActionResult Test()
   {
-    return Ok("Vỹ Bê Đê");
+    var html = @"
+        <div style='
+            font-size:30px;
+            text-align:center;
+            color:purple;
+            margin-top:50px;
+        '>
+            Vỹ bê đê
+        </div>
+    ";
+
+    return Content(html, "text/html");
   }
 }
