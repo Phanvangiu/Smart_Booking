@@ -73,8 +73,9 @@ public class AuthController : BaseApiController
   {
     var html = @"
         <div style='
-            font-size:30px;
+            font-size:50px;
             text-align:center;
+            align-items:center;
             color:purple;
             margin-top:50px;
         '>
@@ -82,6 +83,6 @@ public class AuthController : BaseApiController
         </div>
     ";
 
-    return Content(html, "text/html");
+    return Content(html, "text/html; charset=utf-8");
   }
 }
