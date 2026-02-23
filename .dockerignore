@@ -1,0 +1,18 @@
+# Build output — không copy vào Docker image
+**/bin/
+**/obj/
+
+# Test projects — không cần trong production
+tests/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vs/
+.vscode/
+*.user
+
+# Local config — Docker dùng environment variables thay thế
+**/appsettings.Development.json
