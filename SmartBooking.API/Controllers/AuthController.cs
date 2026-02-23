@@ -67,4 +67,10 @@ public class AuthController : BaseApiController
     var result = await _mediator.Send(command, cancellationToken);
     return result.IsSuccess ? Ok(result) : Unauthorized(result);
   }
+
+  [HttpGet("get")]
+  public async Task<IActionResult> Get()
+  {
+    return Ok("Vỹ Bê Đê");
+  }
 }
