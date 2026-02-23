@@ -1,6 +1,12 @@
+# Build output
 **/bin/
 **/obj/
+
+# IDE
+.vs/
+.vscode/
+*.user
+
+# Local config — chứa secret
 appsettings.Development.json
 .env
-.vs/
-*.user
