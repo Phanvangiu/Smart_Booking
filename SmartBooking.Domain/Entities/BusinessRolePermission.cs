@@ -1,3 +1,5 @@
+using SmartBooking.Domain.Common;
+
 namespace SmartBooking.Domain.Entities;
 
 /// <summary>
@@ -8,7 +10,7 @@ namespace SmartBooking.Domain.Entities;
 /// PK composite = (BusinessRoleId + PermissionId)
 /// → Không dùng BaseEntity vì không cần Id riêng
 /// </summary>
-public class BusinessRolePermission
+public class BusinessRolePermission : BaseEntity
 {
   public Guid BusinessRoleId { get; set; }
   public Guid PermissionId { get; set; }
