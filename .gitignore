@@ -10,3 +10,4 @@
 # Local config — chứa secret
 appsettings.Development.json
 .env
+README.md

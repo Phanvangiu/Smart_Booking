@@ -1,7 +1,7 @@
 using FluentValidation;
 using MediatR;
 
-namespace SmartBooking.Application.Common.Behaviours;
+namespace SmartBooking.Application.Common;
 
 /// <summary>
 /// MediatR Pipeline Behavior — tự động chạy trước mỗi Handler.

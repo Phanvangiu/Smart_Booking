@@ -1,7 +1,7 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using SmartBooking.Application.Common.Behaviours;
+using SmartBooking.Application.Common;
 using System.Reflection;
 
 namespace SmartBooking.Application;
